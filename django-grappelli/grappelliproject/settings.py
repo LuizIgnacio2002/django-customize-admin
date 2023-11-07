@@ -62,13 +62,16 @@ TEMPLATES = [
         "OPTIONS": {
             "context_processors": [
                 "django.template.context_processors.debug",
+                #############
                 "django.template.context_processors.request",
+                ############
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
             ],
         },
     },
 ]
+
 
 WSGI_APPLICATION = "grappelliproject.wsgi.application"
 
@@ -126,16 +129,3 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
  
 
-#### for django-grappelli ####
-TEMPLATES = [
-    {
-        
-        'OPTIONS': {
-            'context_processors': [
-                
-                'django.template.context_processors.request',
-                
-            ],
-        },
-    },
-]
