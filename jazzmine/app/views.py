@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.contrib import admin
 from .models import Student
-# Create your views here.
 
+admin.site.register(Student)
